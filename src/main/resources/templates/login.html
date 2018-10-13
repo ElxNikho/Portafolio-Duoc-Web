@@ -1,0 +1,156 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/util.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+<!--===============================================================================================-->
+	
+</head>
+<body >	
+	<div class="limiter">
+		<div id="background-image" class="container-login100">
+			<div class="wrap-login100 p-b-20">
+				<form id="form-action" action="/Login/loginCEL" class="login100-form validate-form login" method="POST" >
+					<span class="login100-form-title p-b-40">
+						Montreal
+					</span>
+					<div class="text-center">
+						<div class="dis-inline-block">
+							<span class="login100-form-avatar-little border-black lateral pointer">
+								<img src="/images/Student.png" alt="AVATAR">
+							</span>
+						</div>
+						<div class="dis-inline-block middle-img">
+							<span class="login100-form-avatar border-black middle pointer">
+								<img src="/images/CEL.png" alt="AVATAR">
+							</span>
+						</div>
+						<div class="dis-inline-block">
+							<span class="login100-form-avatar-little border-black lateral pointer">
+								<img src="/images/Family.png" alt="AVATAR">
+							</span>
+						</div>
+					</div>
+					<div class="separator-drop"></div>
+					<div class="separator"></div>
+					<div class="form-content f-CEL active">
+						<div class="wrap-input100 validate-input m-t-15 m-b-35" data-validate = "Enter username">
+							<input class="input100" type="text" name="username">
+							<span class="focus-input100" data-placeholder="Username"></span>
+						</div>
+	
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Enter password">
+							<input class="input100" type="password" name="pass">
+							<span class="focus-input100" data-placeholder="Password"></span>
+						</div>
+	
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn">
+								Ingresar
+							</button>
+						</div>
+					</div>
+					<div class="form-content f-FAMILY">
+						<div class="wrap-input100 validate-input m-t-15 m-b-35" data-validate = "Enter username">
+							<input class="input100" type="text" name="username">
+							<span class="focus-input100" data-placeholder="Username"></span>
+						</div>
+	
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Enter password">
+							<input class="input100" type="password" name="pass">
+							<span class="focus-input100" data-placeholder="Password"></span>
+						</div>
+	
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn">
+								Ingresar
+							</button>
+						</div>
+					</div>
+					<div class="form-content f-STUDENT">
+						<div class="wrap-input100 validate-input m-t-15 m-b-35" data-validate = "Enter username">
+							<input class="input100" type="text" name="username">
+							<span class="focus-input100" data-placeholder="Username"></span>
+						</div>
+	
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Enter password">
+							<input class="input100" type="password" name="pass">
+							<span class="focus-input100" data-placeholder="Password"></span>
+						</div>
+	
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn">
+								Ingresar
+							</button>
+						</div>
+					</div>
+					<ul class="login-more p-t-25">
+						<li class="m-b-8">
+							<span class="txt1">
+								Olvidaste tu 
+							</span>
+
+							<a href="#" class="txt2">
+								Nombre de usuario / Contraseña?
+							</a>
+						</li>
+
+						<li>
+							<span class="txt1">
+								Aun no tienes una cuenta?
+							</span>
+
+							<a th:href="@{/register?profile=1}" class="txt2">
+								Registrate
+							</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/bootstrap/js/popper.js"></script>
+	<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="/js/main.js"></script>
+
+</body>
+</html>

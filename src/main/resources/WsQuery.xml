@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	WsQuerys: Nodo principal,
+		url: Direccion url del web service,
+		query: Nodo de definicion de query o llamada a web service,
+			[entity]: Nombre de la entidad o modelo (class).
+			[wsquery]: Nombre del metodo de la entidad que invoca la peticion.
+			[path]: Ruta del web sercice que procesa la consulta.
+			[method]: Metodo con el cual se accede a la consulta.
+			param: Nombre del parametro a enviar a la consulta,
+				[entityParam]: nombre del getter del atributo de clase de la entidad correspondiente al parametro.
+			 response: Entidad o modelo al cual se deben mappear los valores de retorno.	
+ -->
+ 
+<!DOCTYPE xml>
+<WsQuerys>
+	<url>https:8081//webservice/montreal/</url>	
+	
+	<!-- Querys for alumno -->
+	<query entity="Usuario" wsquery="FindAll" path="alumnos/findall" method="post" >
+		<response>Alumno</response>				
+	</query>
+	<query entity="Usuario" wsquery="FindById" path="alumnos/findById" method="post" >
+		<param entityParam="getId" paramType="int">id</param>
+		<response>Alumno</response>				
+	</query>
+		
+	<!-- Querys for ..... -->
+</WsQuerys>	
+	

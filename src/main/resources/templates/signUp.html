@@ -1,0 +1,271 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Registro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/util.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+<!--===============================================================================================-->
+</head>
+<body >	
+	<div class="limiter">
+		<div id="background-image" class="container-login100">
+			<div class="wrap-login100 p-b-20">
+				<form id="form-action" action="/SignUp/CEL" method="POST" class="login100-form validate-form SignUp" autocomplete="false">					
+					<span class="login100-form-title p-b-40">
+						Montreal
+					</span>
+					<div class="text-center">
+						<div class="dis-inline-block">
+							<span class="login100-form-avatar-little border-black lateral pointer">
+								<img src="/images/Student.png" alt="AVATAR">
+							</span>
+						</div>
+						<div class="dis-inline-block middle-img">
+							<span class="login100-form-avatar border-black middle pointer">
+								<img src="/images/CEL.png" alt="AVATAR">
+							</span>
+						</div>
+						<div class="dis-inline-block">
+							<span class="login100-form-avatar-little border-black lateral pointer">
+								<img src="/images/Family.png" alt="AVATAR">
+							</span>
+						</div>
+					</div>
+					<div class="separator-drop"></div>
+					<div class="separator"></div>
+					<div class="form-content f-CEL active">
+						<div class="wrap-input100 validate-input m-t-15 m-b-35" data-validate = "Nombre de la institución">
+							<input class="input100" type="text" name="nombreInst">
+							<span class="focus-input100" data-placeholder="Nombre de la institución"></span>
+						</div>
+	
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Nombre del representante">
+							<input class="input100" type="text" name="nombreRepr">
+							<span class="focus-input100" data-placeholder="Nombre del representante"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Correo">
+							<input class="input100" type="text" name="email">
+							<span class="focus-input100" data-placeholder="Correo"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="País">
+							<input class="input100" type="text" name="pais">
+							<span class="focus-input100" data-placeholder="País"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Ciudad">
+							<input class="input100" type="text" name="ciudad">
+							<span class="focus-input100" data-placeholder="Ciudad"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Dirección">
+							<input class="input100" type="text" name="direccion">
+							<span class="focus-input100" data-placeholder="Dirección"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Teléfono">
+							<input class="input100" type="text" name="telefono">
+							<span class="focus-input100" data-placeholder="Teléfono"></span>
+						</div>
+						
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn">
+								Enviar solicitud
+							</button>
+						</div>
+					</div>
+					<div class="form-content f-FAMILY">
+						<div class="wrap-input100 validate-input m-t-15 m-b-35" data-validate = "Rut">
+							<input class="input100" type="text" name="rutFam">
+							<span class="focus-input100" data-placeholder="Rut jefe de hogar"></span>
+						</div>
+	
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Contraseña">
+							<input class="input100" type="text" name="passFam">
+							<span class="focus-input100" data-placeholder="Contraseña"></span>
+						</div>
+						
+						
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Nombre jefe de hogar">
+							<input class="input100" type="text" name="nombreFam">
+							<span class="focus-input100" data-placeholder="Nombre jefe de hogar"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Apellidos jefe de hogar">
+							<input class="input100" type="text" name="apellidosFam">
+							<span class="focus-input100" data-placeholder="Apellidos jefe de hogar"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Teléfono">
+							<input class="input100" type="text" name="telefonoFam">
+							<span class="focus-input100" data-placeholder="Teléfono"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Correo">
+							<input class="input100" type="text" name="correoFam">
+							<span class="focus-input100" data-placeholder="Correo"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Fecha de nacimiento del jefe de hogar">
+							<input class="input100" type="text" name="fnacFam">
+							<span class="focus-input100" data-placeholder="Fecha de nacimiento del jefe de hogar"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="País">
+							<input class="input100" type="text" name="paisFam">
+							<span class="focus-input100" data-placeholder="País"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Dirección">
+							<input class="input100" type="text" name="dirFam">
+							<span class="focus-input100" data-placeholder="Dirección"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Número de integrantes">
+							<input class="input100" type="text" name="integrantesFam">
+							<span class="focus-input100" data-placeholder="Número de integrantes"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Fotos de vivienda">
+							<input class="input100" type="file" name="fotosVivFam">
+							<span class="focus-input100" data-placeholder="Fotos de vivienda"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Certificado de antecedentes">
+							<input class="input100" type="file" name="antecedentesFam">
+							<span class="focus-input100" data-placeholder="Certificado de antecedentes"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Certificado de recidencia">
+							<input class="input100" type="file" name="recidenciaFam">
+							<span class="focus-input100" data-placeholder="Certificado de recidencia"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Certificado laboral">
+							<input class="input100" type="file" name="laboralFam">
+							<span class="focus-input100" data-placeholder="Certificado laboral"></span>
+						</div>
+						
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn">
+								Enviar solicitud
+							</button>
+						</div>
+					</div>
+					<div class="form-content f-STUDENT">
+						
+						<div class="wrap-input100 validate-input m-t-15 m-b-35" data-validate = "Rut">
+							<input class="input100" type="text" name="rutStu">
+							<span class="focus-input100" data-placeholder="Rut"></span>
+						</div>
+	
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Contraseña">
+							<input class="input100" type="text" name="passStu">
+							<span class="focus-input100" data-placeholder="Contraseña"></span>
+						</div>
+																		
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Nombre">
+							<input class="input100" type="text" name="nombreStu">
+							<span class="focus-input100" data-placeholder="Nombre"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Apellido paterno">
+							<input class="input100" type="text" name="apellidoPStu">
+							<span class="focus-input100" data-placeholder="Apellido paterno"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Apellido materno">
+							<input class="input100" type="text" name="apellidoMStu">
+							<span class="focus-input100" data-placeholder="Apellido materno"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Teléfono">
+							<input class="input100" type="text" name="telefonoStu">
+							<span class="focus-input100" data-placeholder="Teléfono"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Correo">
+							<input class="input100" type="text" name="correoStu">
+							<span class="focus-input100" data-placeholder="Correo"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Carrera">
+							<input class="input100" type="text" name="carreraStu">
+							<span class="focus-input100" data-placeholder="Carrera"></span>
+						</div>
+						<div class="wrap-input100 validate-input m-b-35" data-validate="Dirección">
+							<input class="input100" type="text" name="dirStu">
+							<span class="focus-input100" data-placeholder="Dirección"></span>
+						</div>
+						
+						<div class="wrap-input100 validate-input m-b-35 " data-validate="Sexo">
+							<div class="dis-inline-block-important m-l-40x">
+								<input id="sexoM" class="input100 " type="radio" value="M" name="sexoStu"> 
+								<label for="sexoM" class="w-100x text-white">Masculino</label>
+							</div>
+							<div class="dis-inline-block-important">
+								<input id="sexoF" class="input100" type="radio" value="F" name="sexoStu"> 
+								<label for="sexoF" class="w-100x text-white">Femenino</label>
+							</div>
+							<span class="focus-input100" data-placeholder="Sexo"></span>
+						</div>											
+						
+						<div class="container-login100-form-btn">
+							<button class="login100-form-btn">
+								Enviar solicitud
+							</button>
+						</div>
+					</div>
+					<ul class="login-more p-t-25 m-b-25">						
+						<li>
+							<span class="txt1">
+								Deseas
+							</span>
+
+							<a th:href="@{/Login/}" class="txt2">
+								Iniciar sesión?
+							</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/bootstrap/js/popper.js"></script>
+	<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="/js/main.js"></script>
+
+</body>
+</html>
